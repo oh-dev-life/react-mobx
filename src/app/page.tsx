@@ -1,4 +1,5 @@
 "use client";
+import { Counter } from "@/components";
 import { formatChainAsNum } from "@/helpers/formats";
 import { useMetaMask } from "@/hooks/useMetaMask";
 import { Button } from "@mui/material";
@@ -39,6 +40,7 @@ export default function Home() {
           <strong>Error:</strong> {errorMessage}
         </div>
       )}
+      <Counter />
     </main>
   );
 }
